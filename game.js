@@ -45,59 +45,48 @@ const textNodes = [
     text: 'The Goldfish That Came from Choate Pond: A BlueColab Story',
     options: [
       {
-        text: 'Take the goo',
-        setState: { blueGoo: true },
+        text: 'Start',
         nextText: 2
       },
-      {
-        text: 'Leave the goo',
-        nextText: 2
-      }
     ]
   },
   {
     id: 2,
-    text: 'You venture forth in search of answers to where you are when you come across a merchant.',
+    text: 'Welcome to Pace! You begin your journey as a freshman, and you are given a fish. What do you do?',
     options: [
       {
-        text: 'Trade the goo for a sword',
-        requiredState: (currentState) => currentState.blueGoo,
-        setState: { blueGoo: false, sword: true },
+        text: 'Take the fish',
+        setState: { fish: true },
+        
         nextText: 3
       },
       {
-        text: 'Trade the goo for a shield',
-        requiredState: (currentState) => currentState.blueGoo,
-        setState: { blueGoo: false, shield: true },
-        nextText: 3
+        text: "Don't take the fish",
+        nextText: 10
       },
-      {
-        text: 'Ignore the merchant',
-        nextText: 3
-      }
     ]
   },
   {
     id: 3,
-    text: 'After leaving the merchant you start to feel tired and stumble upon a small town next to a dangerous looking castle.',
+    text: 'You leave the event with curiousity. What do you want to do next with your fish?',
     options: [
       {
-        text: 'Explore the castle',
+        text: 'Return to your dorm',
         nextText: 4
       },
       {
-        text: 'Find a room to sleep at in the town',
+        text: 'Throw the fish into the pond',
         nextText: 5
       },
       {
-        text: 'Find some hay in a stable to sleep in',
+        text: 'Give the fish to your new friend',
         nextText: 6
       }
     ]
   },
   {
     id: 4,
-    text: 'You are so tired that you fall asleep while exploring the castle and are killed by some terrible monster in your sleep.',
+    text: 'You return to your dorm',
     options: [
       {
         text: 'Restart',
@@ -172,7 +161,7 @@ const textNodes = [
   },
   {
     id: 10,
-    text: 'The monster laughed as you hid behind your shield and ate you.',
+    text: "You don't take the fish, and you carry on with your day. Fin.",
     options: [
       {
         text: 'Restart',

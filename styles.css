@@ -29,6 +29,7 @@ body {
   grid-template-columns: repeat(2, auto);
   gap: 10px;
   margin-top: 20px;
+  
 }
 
 .btn {
@@ -38,6 +39,7 @@ body {
   padding: 5px 10px;
   color: white;
   outline: none;
+  
 }
 
 .btn:hover {
