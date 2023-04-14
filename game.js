@@ -86,11 +86,19 @@ const textNodes = [
   },
   {
     id: 4,
-    text: 'You return to your dorm',
+    text: 'You return to your dorm, you discover that you NEED to put the fish in a proper setting. What do you',
     options: [
       {
-        text: 'Restart',
-        nextText: -1
+        text: 'Throw the fish into the toilet',
+        nextText: 5
+      },
+      {
+        text: 'Buy a goldfish bowl for the fish',
+        nextText: 5
+      },
+      {
+        text: 'Leave it in the plastic',
+        nextText: 5
       }
     ]
   },
