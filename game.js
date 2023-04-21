@@ -76,7 +76,7 @@ const textNodes = [
       },
       {
         text: 'Throw the fish into the pond',
-        nextText: 5
+        nextText: 5 // RE-ASSIGN THIS ENDING
       },
       {
         text: 'Give the fish to your new friend',
@@ -86,7 +86,7 @@ const textNodes = [
   },
   {
     id: 4,
-    text: 'You return to your dorm, you discover that you NEED to put the fish in a proper setting. What do you',
+    text: 'You return to your dorm, you discover that you NEED to put the fish in a proper setting. Where is the fish going to go?',
     options: [
       {
         text: 'Throw the fish into the toilet',
@@ -94,7 +94,7 @@ const textNodes = [
       },
       {
         text: 'Buy a goldfish bowl for the fish',
-        nextText: 5
+        nextText: 6
       },
       {
         text: 'Leave it in the plastic',
@@ -103,71 +103,73 @@ const textNodes = [
     ]
   },
   {
-    id: 5,
-    text: 'Without any money to buy a room you break into the nearest inn and fall asleep. After a few hours of sleep the owner of the inn finds you and has the town guard lock you in a cell.',
+    id: 5, // THE TOILET ENDING
+    text: 'You throw the fish into the toilet, and it ventures into the sewers. The fish develops powers from the waste its been swimming within, and destroys the entire school. Fin.',
     options: [
       {
-        text: 'Restart',
+        text: 'Start Over',
         nextText: -1
       }
     ]
   },
   {
     id: 6,
-    text: 'You wake up well rested and full of energy ready to explore the nearby castle.',
+    text: 'You buy a goldish bowl for your new little friend, but then you start to panick about what kind of water it needs. What are you going to fill in the tank?',
     options: [
       {
-        text: 'Explore the castle',
+        text: 'Salt Water',
+        nextText: 7
+      },
+      {
+        text: 'Fresh water',
+        nextText: 8
+      },
+      {
+        text: 'VitaminWater',
         nextText: 7
       }
     ]
   },
   {
-    id: 7,
-    text: 'While exploring the castle you come across a horrible monster in your path.',
+    id: 7, // Salt Water Ending
+    text: 'Salt water is not good for the fish!! It dies minutes after you expose it to salt water. Fin.',
     options: [
       {
-        text: 'Try to run',
-        nextText: 8
-      },
-      {
-        text: 'Attack it with your sword',
-        requiredState: (currentState) => currentState.sword,
-        nextText: 9
-      },
-      {
-        text: 'Hide behind your shield',
-        requiredState: (currentState) => currentState.shield,
-        nextText: 10
-      },
-      {
-        text: 'Throw the blue goo at it',
-        requiredState: (currentState) => currentState.blueGoo,
-        nextText: 11
+        text: 'Start Over',
+        nextText: -1
       }
     ]
   },
   {
     id: 8,
-    text: 'Your attempts to run are in vain and the monster easily catches.',
+    text: 'You give it the proper water it needs to survive. But now the fish is hungry, what do you give the fish?',
     options: [
       {
-        text: 'Restart',
+        text: 'Fish food',
+        nextText: 9
+      },
+      {
+        text: 'Crushed-up doritos',
+        nextText: -1
+      },
+      {
+        text: 'Peas that have been sitting in your freezer',
         nextText: -1
       }
     ]
   },
   {
-    id: 9,
-    text: 'You foolishly thought this monster could be slain with a single sword.',
+    id: 9, // FISH FOOD ENDING
+    text: 'You give the fish the proper food it needs. You are trusted enough to be able to take care of the fish for the rest of its healthy days! Be proud of yourself. :) Fin.',
     options: [
       {
-        text: 'Restart',
+        text: 'Start Over',
         nextText: -1
       }
     ]
   },
   {
+    // NEUTRAL ENDING
     id: 10,
     text: "You don't take the fish, and you carry on with your day. Fin.",
     options: [
@@ -178,12 +180,24 @@ const textNodes = [
     ]
   },
   {
+    // 
     id: 11,
-    text: 'You threw your jar of goo at the monster and it exploded. After the dust settled you saw the monster was destroyed. Seeing your victory you decide to claim this castle as your and live out the rest of your days there.',
+    text: 'TO BE DETERMINED',
     options: [
       {
-        text: 'Congratulations. Play Again.',
-        nextText: -1
+        text: 'TO BE DETERMINED',
+        nextText: 12
+      }
+    ]
+  },
+  {
+    // 
+    id: 12,
+    text: 'TO BE DETERMINED',
+    options: [
+      {
+        text: 'TO BE DETERMINED',
+        nextText: 13
       }
     ]
   }
