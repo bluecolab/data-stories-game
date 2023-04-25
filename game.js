@@ -39,6 +39,12 @@ function selectOption(option) {
   showTextNode(nextTextNodeId)
 }
 
+function imageChange(option){
+  let image = document.getElementById('image')
+  let images = ['https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg', 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2022%2F09%2F22%2Ffacts-about-cats-1292117990-2000.jpg&q=60', 'https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg']
+  image.src = images[option]
+}
+
 const textNodes = [
   {
     id: 1,
