@@ -82,11 +82,11 @@ const textNodes = [
       },
       {
         text: 'Throw the fish into the pond',
-        nextText: 5 // RE-ASSIGN THIS ENDING
+        nextText: 15 // RE-ASSIGN THIS ENDING
       },
       {
         text: 'Give the fish to your new friend',
-        nextText: 6
+        nextText: 16
       }
     ]
   },
@@ -104,7 +104,7 @@ const textNodes = [
       },
       {
         text: 'Leave it in the plastic',
-        nextText: 5
+        nextText: 14
       }
     ]
   },
@@ -132,12 +132,12 @@ const textNodes = [
       },
       {
         text: 'VitaminWater',
-        nextText: 7
+        nextText: 13
       }
     ]
   },
   {
-    id: 7, // Salt Water Ending
+    id: 7, // SALT WATER ENDING
     text: 'Salt water is not good for the fish!! It dies minutes after you expose it to salt water. Fin.',
     options: [
       {
@@ -147,7 +147,7 @@ const textNodes = [
     ]
   },
   {
-    id: 8,
+    id: 8,  
     text: 'You give it the proper water it needs to survive. But now the fish is hungry, what do you give the fish?',
     options: [
       {
@@ -156,11 +156,11 @@ const textNodes = [
       },
       {
         text: 'Crushed-up doritos',
-        nextText: -1
+        nextText: 11
       },
       {
         text: 'Peas that have been sitting in your freezer',
-        nextText: -1
+        nextText: 12
       }
     ]
   },
@@ -185,28 +185,66 @@ const textNodes = [
       }
     ]
   },
-  {
-    // 
-    id: 11,
-    text: 'TO BE DETERMINED',
+  { 
+    id: 11, // DORITOS ENDING
+    text: "You feed the fish crushed up doritos, it doesn't eat it. Because of that, it dies the same day. Fin.",
     options: [
       {
-        text: 'TO BE DETERMINED',
-        nextText: 12
+        text: 'Restart',
+        nextText: -1
       }
     ]
   },
   {
-    // 
-    id: 12,
-    text: 'TO BE DETERMINED',
+    id: 12, // PEAS ENDING
+    text: "You feed the fish peas, it likes the peas! You can feed it peas since it's a vegetable. While you feed it you go to the store and buy fish food. The fish continues to live a long and happy life. Fin.",
     options: [
       {
-        text: 'TO BE DETERMINED',
-        nextText: 13
+        text: 'Restart',
+        nextText: -1
       }
     ]
-  }
+  },
+  {
+    id: 13, // VITAMIN WATER ENDING
+    text: 'You fill the tank with VitaminWater that you found in the fridge. The fish died the next day. What convinced you that was a good idea? Fin.',
+    options: [
+      {
+        text: 'Restart',
+        nextText: -1
+      }
+    ]
+  },
+  {
+    id: 14, // PLASTIC BAG ENDING
+    text: 'A plastic bag is supposed to be temporary, not a permament residency! The fish dies days later due to the lack of environment, and imbalance of water and air. Fin.',
+    options: [
+      {
+        text: 'Restart',
+        nextText: -1
+      }
+    ]
+  },
+  {
+    id: 15, // POND ENDING
+    text: "You throw the fish into Choate Pond. What you don't realize is that Goldfish are predatory to ponds and aren't supposed to be in there. This leads to the fish to mutate overtime, and become intelligent. The fish grows in size and begins to destroy Pace. Look at what you've done. Fin.",
+    options: [
+      {
+        text: 'Restart',
+        nextText: -1
+      }
+    ]
+  },
+  {
+    id: 16, // FRIEND ENDING
+    text: 'You give the fish to your friend. They decide to not bother to care for the fish and flush it down the toilet, and it ventures into the sewers. The fish develops powers from the waste its been swimming within, and destroys the entire school. Fin.',
+    options: [
+      {
+        text: 'Restart',
+        nextText: -1
+      }
+    ]
+  },
 ]
 
 startGame()
