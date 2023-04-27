@@ -37,6 +37,7 @@ function selectOption(option) {
   }
   state = Object.assign(state, option.setState)
   showTextNode(nextTextNodeId)
+  imageChange(nextTextNodeId -1)
 }
 
 function imageChange(option){
