@@ -42,7 +42,7 @@ function selectOption(option) {
 
 function imageChange(option){
   let image = document.getElementById('image')
-  let images = ['https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg', 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2022%2F09%2F22%2Ffacts-about-cats-1292117990-2000.jpg&q=60', 'https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg']
+  let images = ['https://data.bluecolab.pace.edu/static/css/images/BlueColab.png','https://www.pace.edu/sites/default/files/styles/16_9_1600x900/public/2021-04/westchester-campus-housing-full.jpg?h=854a7be2&itok=sb72jzax', 'https://www.discountplasticbags.com/media/catalog/category/Leak_Proof_Fish_Bags_1.jpg', 'https://www.pace.edu/sites/default/files/styles/16_9_gallery_1600x900_/public/2021-05/housing-residence-halls-alumni-hall-westchester-1.jpg?h=c8e0c3d8&itok=rpSbmsZS', 'https://media.istockphoto.com/id/1201207508/photo/destroyed-cityscape.jpg?s=612x612&w=0&k=20&c=WAhe1FzCQ_oDY-U5o6X-gfJYMQO7qwRBMUC3_REHOzY=']
   image.src = images[option]
 }
 
@@ -75,7 +75,7 @@ const textNodes = [
   },
   {
     id: 3,
-    text: 'You leave the event with curiousity. What do you want to do next with your fish?',
+    text: 'You leave the event with curiosity. What do you want to do next with your fish?',
     options: [
       {
         text: 'Return to your dorm',
@@ -218,7 +218,7 @@ const textNodes = [
   },
   {
     id: 14, // PLASTIC BAG ENDING
-    text: 'A plastic bag is supposed to be temporary, not a permament residency! The fish dies days later due to the lack of environment, and imbalance of water and air. Fin.',
+    text: 'A plastic bag is supposed to be temporary, not a permanent residency! The fish dies days later due to the lack of environment, and imbalance of water and air. Fin.',
     options: [
       {
         text: 'Restart',
