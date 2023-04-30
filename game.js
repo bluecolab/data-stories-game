@@ -139,7 +139,7 @@ const textNodes = [
   },
   {
     id: 7, // SALT WATER ENDING
-    text: 'Salt water is not good for the fish!! It dies minutes after you expose it to salt water. Fin.',
+    text: 'Salt water is not good for the fish!! It passes away after you expose it to salt water. Fin.',
     options: [
       {
         text: 'Start Over',
@@ -188,7 +188,7 @@ const textNodes = [
   },
   { 
     id: 11, // DORITOS ENDING
-    text: "You feed the fish crushed up doritos, it doesn't eat it. Because of that, it dies the same day. Fin.",
+    text: "You feed the fish crushed up doritos, it doesn't eat it. Because of that, it passes away the same day. Fin.",
     options: [
       {
         text: 'Restart',
@@ -208,7 +208,7 @@ const textNodes = [
   },
   {
     id: 13, // VITAMIN WATER ENDING
-    text: 'You fill the tank with VitaminWater that you found in the fridge. The fish died the next day. What convinced you that was a good idea? Fin.',
+    text: 'You fill the tank with VitaminWater that you found in the fridge. The fish passed away the next day. Fin.',
     options: [
       {
         text: 'Restart',
@@ -218,7 +218,7 @@ const textNodes = [
   },
   {
     id: 14, // PLASTIC BAG ENDING
-    text: 'A plastic bag is supposed to be temporary, not a permanent residency! The fish dies days later due to the lack of environment, and imbalance of water and air. Fin.',
+    text: 'A plastic bag is supposed to be temporary, not a permanent residency! The fish passes away days later due to the lack of environment, and imbalance of water and air. Fin.',
     options: [
       {
         text: 'Restart',
