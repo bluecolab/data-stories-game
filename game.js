@@ -6,6 +6,7 @@ let state = {}
 function startGame() {
   state = {}
   showTextNode(1)
+  imageChange(0)
 }
 
 function showTextNode(textNodeIndex) {
@@ -42,8 +43,12 @@ function selectOption(option) {
 
 function imageChange(option){
   let image = document.getElementById('image')
-  let images = ['https://data.bluecolab.pace.edu/static/css/images/BlueColab.png','https://www.pace.edu/sites/default/files/styles/16_9_1600x900/public/2021-04/westchester-campus-housing-full.jpg?h=854a7be2&itok=sb72jzax', 'https://www.discountplasticbags.com/media/catalog/category/Leak_Proof_Fish_Bags_1.jpg', 'https://www.pace.edu/sites/default/files/styles/16_9_gallery_1600x900_/public/2021-05/housing-residence-halls-alumni-hall-westchester-1.jpg?h=c8e0c3d8&itok=rpSbmsZS', 'https://media.istockphoto.com/id/1201207508/photo/destroyed-cityscape.jpg?s=612x612&w=0&k=20&c=WAhe1FzCQ_oDY-U5o6X-gfJYMQO7qwRBMUC3_REHOzY=']
-  image.src = images[option]
+  let images = ['IMAGES/1.png','IMAGES/2.jpeg', 'IMAGES/3.png', 'IMAGES/4.jpeg', 'IMAGES/5.png', 'IMAGES/6.jpg', 'IMAGES/7.png', 'IMAGES/8.jpg', 'IMAGES/9.png', 'IMAGES/10.png', 'IMAGES/11.png', 'IMAGES/12.png', 'IMAGES/13.png', 'IMAGES/14.png', 'IMAGES/15.png', 'IMAGES/16.png']
+  if (option == -1){
+    image.src = images[0]
+  }else{
+    image.src = images[option]
+  }
 }
 
 const textNodes = [
@@ -249,3 +254,4 @@ const textNodes = [
 ]
 
 startGame()
+imageChange(0)
