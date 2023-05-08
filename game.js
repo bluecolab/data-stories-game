@@ -254,4 +254,3 @@ const textNodes = [
 ]
 
 startGame()
-imageChange(0)
